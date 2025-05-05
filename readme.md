@@ -1,16 +1,16 @@
 GITBASH
 ```
-ssh-keygen -t rsa -f ~/.ssh/FILE -C "FILE"
+ssh-keygen -t rsa -f ~/.ssh/F -C "F"
 ```
 ```
 cd /c/Users/akhil66222/.ssh/
 
 ```
 ```
-cat FILE.pub
+cat F.pub
 ```
 ```
-ssh -i FILE FILE@EXTERNAL IP
+ssh -i F F@IP
 ```
 
 STARTING THE GENSYN NODE
