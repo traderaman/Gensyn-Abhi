@@ -53,7 +53,7 @@ cloudflared tunnel --url http://localhost:3000
 DON'T CLICK 'N' TO HIVERMIND, DETATCH AND...
 ```
 sudo apt-get update && sudo apt-get install nano -y
-nano /home/og2/rl-swarm/hivemind_exp/configs/mac/grpo-qwen-2.5-0.5b-deepseek-r1.yaml
+cd $HOME/rl-swarm/hivemind_exp/configs/mac/ && nano grpo-qwen-2.5-0.5b-deepseek-r1.yaml
 ```
 ```
 cd $HOME/rl-swarm/ && nano hivemind_exp/runner/grpo_runner.py
