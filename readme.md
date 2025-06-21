@@ -43,23 +43,27 @@ screen -S gensyn
 ```
 cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-testnet.git && chmod +x gensyn-testnet/gensyn.sh && ./gensyn-testnet/gensyn.sh
 ``````
-LOGIN WITH EMAIL AND CLOSE THE NEW TERMINAL......GO BACK TO OLD TERMINAL....FAST COPY ORG ID 
 
-COPY 3 WORD NAME AND PEER ID FROM SAME LINE COMMAND .... SAVE BOTH IN TXT
+LOGIN WITH EMAIL
+```
+wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+sudo dpkg -i cloudflared-linux-amd64.deb
+cloudflared tunnel --url http://localhost:3000
+```
+DON'T CLICK 'N' TO HIVERMIND, DETATCH AND...
+```
+sudo apt-get update && sudo apt-get install nano -y
+nano /home/og2/rl-swarm/hivemind_exp/configs/mac/grpo-qwen-2.5-0.5b-deepseek-r1.yaml
+```
+```
+cd $HOME/rl-swarm/ && nano hivemind_exp/runner/grpo_runner.py
+```
+RETURN TO MAIN SCREEN AND PRESS 'N'
 
-COMMAND WILL RUN 
 
-PRESS CTRL+A+D
+
+BACKUP ALL THREE
 ``````
 [ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/AbhiEBA/gensyn1/main/backup.sh && chmod +x backup.sh && ./backup.sh
 ``````
-BACKUP ALL THREE
 
-PRESS CTRL+C TO CLOSE
-``````
-screen -ls
-``````
-``````
-screen -r CODE
-``````
-CHECK ON  GENSYN TG BOT GIVING YOUR NODE ID, IF THE WALLET IS NOT SHOWING 0000 IF ITS SHOWING, REDO NODE PROCESS FROM START
