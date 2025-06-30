@@ -20,6 +20,7 @@ sudo ufw allow 22
 sudo ufw allow 3000/tcp
 sudo ufw enable
 ```
+```
 sudo swapoff -a
 sudo rm -f /swapfile
 
