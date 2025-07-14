@@ -60,16 +60,10 @@ wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloud
 sudo dpkg -i cloudflared-linux-amd64.deb
 cloudflared tunnel --url http://localhost:3000
 ```
-DON'T CLICK 'N' TO HIVERMIND, DETATCH AND...
-```
-sudo apt-get update && sudo apt-get install nano -y
-cd $HOME/rl-swarm/hivemind_exp/configs/mac/ && nano grpo-qwen-2.5-0.5b-deepseek-r1.yaml
-```
-```
-cd $HOME/rl-swarm/ && nano hivemind_exp/runner/grpo_runner.py
-```
-RETURN TO MAIN SCREEN AND PRESS 'N'
 
+```
+Gensyn/Qwen2.5-0.5B-Instruct
+```
 
 
 BACKUP ALL THREE
