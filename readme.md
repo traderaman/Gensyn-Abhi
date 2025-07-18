@@ -51,6 +51,7 @@ cd rl-swarm
 ```
 python3 -m venv .venv
 source .venv/bin/activate
+sed -i 's/rewards = torch.tensor(rewards)/rewards = torch.tensor([[r, 0.0] if isinstance(r, (int, float)) else r for r in rewards])/g' .venv/lib/python3.12/site-packages/genrl/trainer/grpo_trainer.py
 ./run_rl_swarm.sh
 ``````
 
