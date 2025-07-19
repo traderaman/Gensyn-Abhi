@@ -72,3 +72,13 @@ BACKUP ALL THREE
 [ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/AbhiEBA/gensyn1/main/backup.sh && chmod +x backup.sh && ./backup.sh
 ``````
 
+ERROR WANDB:
+``````
+git switch main
+git reset --hard
+git clean -fd
+git pull origin main
+``````
+``````
+./run_rl_swarm.sh
+``````
