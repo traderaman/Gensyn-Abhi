@@ -66,19 +66,20 @@ cloudflared tunnel --url http://localhost:3000
 Gensyn/Qwen2.5-0.5B-Instruct
 ```
 
-
-BACKUP ALL THREE
-``````
-[ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/AbhiEBA/gensyn1/main/backup.sh && chmod +x backup.sh && ./backup.sh
-``````
-
 ERROR WANDB:
 ``````
 git switch main
 git reset --hard
 git clean -fd
 git pull origin main
+./run_rl_swarm.sh
 ``````
+
+TERMINATION
 ``````
+deactivate
+rm -rf .venv
+python3 -m venv .venv
+source .venv/bin/activate
 ./run_rl_swarm.sh
 ``````
