@@ -68,6 +68,10 @@ Gensyn/Qwen2.5-0.5B-Instruct
 
 ERROR WANDB:
 ``````
+deactivate
+rm -rf .venv
+python3 -m venv .venv
+source .venv/bin/activate
 git switch main
 git reset --hard
 git clean -fd
@@ -75,11 +79,4 @@ git pull origin main
 ./run_rl_swarm.sh
 ``````
 
-TERMINATION
-``````
-deactivate
-rm -rf .venv
-python3 -m venv .venv
-source .venv/bin/activate
-./run_rl_swarm.sh
-``````
+
