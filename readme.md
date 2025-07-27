@@ -84,6 +84,10 @@ git stash
 git pull
 bash run_rl_swarm.sh
 ``````
+VERSION CHECK:
+``````
+git describe --tags
+``````
 BACKUP:
 ``````
 [ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/AbhiEBA/gensyn1/main/backup.sh && chmod +x backup.sh && ./backup.sh
