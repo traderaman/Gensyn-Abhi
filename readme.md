@@ -92,4 +92,7 @@ BACKUP:
 ``````
 [ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/AbhiEBA/gensyn1/main/backup.sh && chmod +x backup.sh && ./backup.sh
 ``````
-
+TRL:
+``````
+pip install --force-reinstall transformers==4.51.3 trl==0.19.1
+``````
