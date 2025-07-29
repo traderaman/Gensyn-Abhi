@@ -52,6 +52,7 @@ cd rl-swarm
 python3 -m venv .venv
 source .venv/bin/activate
 sed -i 's/rewards = torch.tensor(rewards)/rewards = torch.tensor([[r, 0.0] if isinstance(r, (int, float)) else r for r in rewards])/g' .venv/lib/python3.12/site-packages/genrl/trainer/grpo_trainer.py
+pip install --force-reinstall transformers==4.51.3 trl==0.19.1
 ./run_rl_swarm.sh
 ``````
 
@@ -91,8 +92,4 @@ git describe --tags
 BACKUP:
 ``````
 [ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/AbhiEBA/gensyn1/main/backup.sh && chmod +x backup.sh && ./backup.sh
-``````
-TRL:
-``````
-pip install --force-reinstall transformers==4.51.3 trl==0.19.1
 ``````
